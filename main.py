@@ -42,7 +42,7 @@ def main(message: telebot.types.ChatJoinRequest):
                            'Этого будет достаточно, чтобы твоя заявка была одобрена. '
                            'Если на нём будет найдена минимум 1 NFT из нижеуказанных '
                            'коллекций, либо активируй Telegram Premium')
-    bot.register_next_step_handler(msg, test)
+    bot.register_next_step_handler(msg, approve)
 
 
 bot.infinity_polling(allowed_updates=telebot.util.update_types)
